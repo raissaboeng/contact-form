@@ -15,30 +15,31 @@
             <div class="form">
                 <button class="close" title="Fechar"> X </button>
 
-                <h1>Contate-nos</h1>
-                <form id="contact" action="">
+                <h1>Contato</h1>
+                <form id="contact" action="" onsubmit="Form.submit(event)" method="POST">
                     <div class="input-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" required>
+                        <label for="name" >Nome <small>*</small> </label>
+                        <input type="text" id="name" placeholder="Exemplo: Maria">
                     </div>
                     <div class="input-group">
-                        <label for="phone">Telefone</label>
-                        <input type="phone" id="phone" required>
+                        <label for="phone" >Telefone<small>*</small></label>
+                        <input type="phone" id="phone" placeholder="(48)99999-9999">
                     </div>
                     <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
+                        <label for="email" >Email<small>*</small></label>
+                        <input type="email" id="email" placeholder="seuemail@dominio.com">
                     </div>
                     <div class="input-group">
-                        <label for="message">Mensagem</label>
-                        <textarea form="contact" id="message" required></textarea>
+                        <label for="message">Mensagem<small>*</small></label>
+                        <textarea form="contact" id="message" placeholder="Escreva sua mensagem aqui"></textarea>
                     </div>   
                 </form>  
 
                 <small>* Por favor, preencha todos os campos necessários.</small>
-                <button class="submit" type="submit">Enviar</button>
+                <button form="contact" class="submit">Enviar</button>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
