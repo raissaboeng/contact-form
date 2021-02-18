@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    text-align: center;
+    align-items: center;
+    outline: none;
+    background:none;
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center ;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+   
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    min-height: 70%;
+    background-color: white;
+    border-radius: 50px 0 50px 0;
+    padding: 4rem;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 0 #fff, 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.close {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    top: 2px;
+    right: 20px;
+    border: none;
+    color: gray;
+
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #e43a73;
+}
+
+label{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0 0 10px 0;
+    border: 1px solid gray;
+    outline:none;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+small {
+    color: red;
+}
+
+.submit {
+    width: 80%;
+    height: 2.5rem;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid #e43a73;
+    border-radius: 20px;
+    color: #e43a73;
+    font-size: 1rem;
+    
+    transition: background 0.4s linear;
+
+}
+
+.submit:hover {
+    background-color: #e43a73;
+    color: white;
+}
+

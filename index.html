@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="form">
+                <button class="close" title="Fechar"> X </button>
+
+                <h1>Contate-nos</h1>
+                <form id="contact" action="">
+                    <div class="input-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Telefone</label>
+                        <input type="phone" id="phone" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Mensagem</label>
+                        <textarea form="contact" id="message" required></textarea>
+                    </div>   
+                </form>  
+
+                <small>* Por favor, preencha todos os campos necessários.</small>
+                <button class="submit" type="submit">Enviar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
